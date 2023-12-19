@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+body {
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    min-width: 300px;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.order {
+    margin: 1%;
+    background-color: white;
+    border-radius: 1rem;
+   
+}
+
+.header-image img {
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1% 8%;
+}
+
+.order-summary h1 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: large;
+    font-weight: 900;
+}
+
+.order-summary p {
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.annual-plan-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+}
+
+.annual-plan-row img {
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 50%;
+}
+
+.annual-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.annual-plan .text {
+    font-weight: 900;
+}
+
+.annual-plan .price {
+    color: hsl(245, 75%, 52%);
+    font-size: smaller;
+}
+
+.annual-plan-row .change {
+    text-decoration: underline;
+    font-size: smaller;
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+}
+
+.annual-plan-row .change:hover {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 0.7rem;
+    color: white;
+    font-weight: bold;
+    padding: 4%;
+    width: 100%;
+    box-shadow: 0 8px 8px hsl(225, 100%, 98%);
+    margin-bottom: 5%;
+}
+
+.payment-btn:hover {
+    background-color: hsl(245, 57%, 61%);
+    cursor: pointer;
+}
+
+
+.cancel-order {
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel-order:hover {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+
+/* mobile phones */
+@media (min-width:320px) {
+    .order {
+        max-width: 70%;
+        max-height: 60%;
+        margin: auto;
+    }
+}
+
+/* tablets */
+@media (min-width:768px) {
+    .order {
+        max-width: 40%;
+        max-height: 60%;
+        margin: auto;
+    }
+}
+
+/* laptops */
+@media (min-width:1024px) {
+    .order {
+        max-width: 30%;
+        max-height: 50%;
+        margin: auto;
+    }
+
+}
